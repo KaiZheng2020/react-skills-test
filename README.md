@@ -1,6 +1,6 @@
 # HowTo
 
-1. This a React Skills Test, and the main fucntion is to show the family organization
+1. This is a React Skills Test, and the main fucntion is to show the family organization
 2. More information can be obtained from doc/React Skills Test.pdf
 3. custom-node-chart/custom-node-chart.js ->
    'familyTree': change this json and refresh the browser to view effect
