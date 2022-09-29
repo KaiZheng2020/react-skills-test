@@ -1,3 +1,10 @@
+# HowTo
+
+1. This a React Skills Test, and the main fucntion is to show the family organization
+2. More information can be obtained from doc/React Skills Test.pdf
+3. custom-node-chart/custom-node-chart.js ->
+   'familyTree': change this json and refresh the browser to view effect
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
