@@ -1,10 +1,3 @@
-# Requirements
-
-- People with a gender of "female" should have background-color lightpink
-- People with gender of "male" should have background-color lightblue.
-- Each box should contain the person’s name
-- The component should be able to consume any family tree, not just the one provided.
-
 # HowTo
 
 1. This is a React Skills Test, and the main fucntion is to show the family organization
@@ -13,7 +6,12 @@
    'familyTree': change this json and refresh the browser to view effect
 4. run 'npm install' to init the project
 5. run 'npm start' to see the example
+# Requirements
 
+- People with a gender of "female" should have background-color lightpink
+- People with gender of "male" should have background-color lightblue.
+- Each box should contain the person’s name
+- The component should be able to consume any family tree, not just the one provided.
 
 # Example
 
