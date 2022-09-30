@@ -1,77 +1,78 @@
+# Requirements
+
+- People with a gender of "female" should have background-color lightpink
+- People with gender of "male" should have background-color lightblue.
+- Each box should contain the person’s name
+- The component should be able to consume any family tree, not just the one provided.
+
 # HowTo
 
 1. This is a React Skills Test, and the main fucntion is to show the family organization
 2. More information can be obtained from doc/React Skills Test.pdf
 3. custom-node-chart/custom-node-chart.js ->
    'familyTree': change this json and refresh the browser to view effect
+4. run 'npm install' to init the project
+5. run 'npm start' to see the example
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Example
 
-## Available Scripts
+![image](public/sample.png)
 
-In the project directory, you can run:
+# Test Data
 
-### `npm start`
+```javascript
+const familyTree = [
+        {
+            id: 2351232112252,
+            name: 'Sally',
+            children: [5555, 6666, 7777, 8458189966444, 897543276547654765443576],
+            gender: 'female',
+            parents: [],
+        },
+        {
+            id: 1231239887112,
+            name: 'Billy',
+            children: [8458189966444, 5555, 6666, 7777, 897543276547654765443576],
+            gender: 'male',
+            parents: [],
+        },
+        {
+            id: 7777,
+            name: 'Suzie',
+            gender: 'female',
+            children: [317849882, 8569047194214199353],
+            parents: [2351232112252, 1231239887112],
+        },
+        { id: 23123122, name: 'Sam', gender: 'male', children: [317849882, 8569047194214199353], parents: [] },
+        { id: 317849882, name: 'Josh', gender: 'male', children: [43924235082592], parents: [7777, 23123122] },
+        { id: 8593288989, name: 'Sarah', gender: 'female', children: [43924235082592], parents: [] },
+        { id: 43924235082592, name: 'Jim', gender: 'male', children: [9305009999], parents: [317849882, 8593288989] },
+        { id: 83473298328562398696, name: 'Clara', gender: 'female', children: [9305009999], parents: [] },
+        { id: 9305009999, name: 'Joe', children: [], gender: 'male', parents: [43924235082592, 83473298328562398696] },
+        {
+            id: 8569047194214199353,
+            name: 'Charlie',
+            gender: 'male',
+            children: [565893648394894339808],
+            parents: [23123122, 7777],
+        },
+        { id: 4382743284732483290, name: 'Jessie', gender: 'female', children: [565893648394894339808], parents: [] },
+        {
+            id: 565893648394894339808,
+            name: 'Bob',
+            gender: 'male',
+            children: [],
+            parents: [8569047194214199353, 4382743284732483290],
+        },
+        { id: 8458189966444, name: 'Ricky', gender: 'male', children: [], parents: [2351232112252, 1231239887112] },
+        {
+            id: 897543276547654765443576,
+            name: 'Julian',
+            gender: 'male',
+            children: [],
+            parents: [1231239887112, 2351232112252],
+        },
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
